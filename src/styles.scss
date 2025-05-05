@@ -1,1 +1,44 @@
+
 /* You can add global styles to this file, and also import other style files */
+body {
+    margin: 0;
+    height: 100vh;
+    background: linear-gradient(
+    to bottom,
+    #ffffff 0%,
+    #e0e0e0 20%,
+    #a0a0a0 35%,
+    #000000e5 100%
+  );
+    color: white;
+    font-family: sans-serif;
+
+}
+
+.container {
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
+    max-width: 93%;
+    margin: 0 auto;
+}
+
+.button-wrapper {
+    width: 100%;
+    text-align: right;
+    margin-top: 20px;
+}
+.button-next {
+    background-color: #020405a9;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.3s ease;
+  }
+.button-next:hover {
+    transform: scale(1.05); 
+    background-color: #0a0f1a; 
+  }
