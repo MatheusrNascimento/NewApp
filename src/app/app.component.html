@@ -1,19 +1,20 @@
 <h1>Matheus Rodrigues</h1>
+
 <main>
     <div class="container">
         <form [formGroup]="formPerson" (ngSubmit)="sendData()">
 
             <label for="nome">Nome:</label>
-            <input type="text" id="name" formControlName="name" required>
+            <input type="text" id="name" formControlName="Nome" required>
 
             <label for="nickname">Apelido:</label>
-            <input type="text" id="nickname" formControlName="nickname" required>
+            <input type="text" id="nickname" formControlName="Apelido" required>
 
             <label for="birthdate">Nascimento:</label>
-            <input type="date" id="birthdate" formControlName="birthdate" required>
+            <input type="date" id="birthdate" formControlName="Nascimento" required>
 
             <label>Stack:</label>
-            <div formArrayName="stack" id="stack">
+            <div formArrayName="Stack" id="stack">
                 <div *ngFor="let control of stackControls; let i = index" id="stack-input">
                     <input [formControlName]="i" placeholder="Ex: Angular" />
                     <button type="button" class="remove-stack-btn" (click)="removeStack(i)">❌</button>
